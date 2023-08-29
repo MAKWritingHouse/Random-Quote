@@ -1,11 +1,14 @@
 import React from 'react';
-import './style.scss'
+import './style.scss';
 
 const Footer = () => {
   return (
     <footer>
       <p>
-        <a href='https://makwritinghouse.com' target='_blank'>
+        <a
+          href="https://makwritinghouse.com"
+          target="_blank"
+        >
           MAK Writing House{' '}
         </a>
         - Random Quote &copy; {new Date().getFullYear()}. DEVELOP & MAINTAIN BY
