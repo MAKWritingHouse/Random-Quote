@@ -3,6 +3,7 @@
 import { QuoteType } from '@/app/types/home';
 import { useEffect, useState } from 'react';
 import './style.scss';
+import { getRandomQuote } from '@/app/utils/quote';
 
 const Home = () => {
   const [quote, setQuote] = useState<QuoteType>({
@@ -13,10 +14,12 @@ const Home = () => {
 
   const fetchQuotes = async (): Promise<void> => {
     try {
-      const response = await fetch('https://type.fit/api/quotes');
-      const quotes: QuoteType[] = await response.json();
-      const randomIndex: number = Math.floor(Math.random() * quotes.length);
-      setQuote(quotes[randomIndex]);
+      const response = await fetch('https://type.fit/api/quotes').then(
+        (res) => {
+          return res.json();
+        }
+      );
+      setQuote(getRandomQuote(response));
       setCopyBtnText('Copy to Clipboard');
     } catch (error) {
       console.error('Error fetching quotes:', error);

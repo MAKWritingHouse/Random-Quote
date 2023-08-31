@@ -1,48 +1,11 @@
 {
-
-  
-  // editor settings
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.tabSize": 2,
-  "editor.fontSize": 26,
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "on",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "explicit",
-  "editor.cursorStyle": "underline",
-  "editor.cursorSurroundingLinesStyle": "all",
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  
-  // Enable format-on-save
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true
-  },
-  "[scss]": {
-    "editor.formatOnSave": true
-  },
-
-  // Enable IntelliSense for JavaScript and TypeScript
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-
-  // Customize the Prettier formatter settings
-  // "prettier.semi": true,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": true,
-  "prettier.printWidth": 80,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "prettier.bracketSpacing": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.bracketSameLine": true,
-  "prettier.singleAttributePerLine": true,
-
-  // workbench theme
-  "workbench.colorTheme": "Visual Studio Dark"
+	"workbench.colorTheme": "Default Dark+",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.guides.bracketPairs": true,
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleAttributePerLine": true,
+	"prettier.useTabs": true
 }
