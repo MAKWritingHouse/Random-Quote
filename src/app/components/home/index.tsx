@@ -1,6 +1,6 @@
 'use client';
 
-import { IQuote } from '@/app/types/home';
+import { IQuote } from '@/app/interfaces/home';
 import { useLayoutEffect, useState } from 'react';
 import './style.scss';
 
