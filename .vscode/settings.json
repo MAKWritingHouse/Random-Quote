@@ -1,0 +1,11 @@
+{
+	"workbench.colorTheme": "Default Dark+",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.guides.bracketPairs": true,
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleAttributePerLine": true,
+	"prettier.useTabs": true
+}
