@@ -60,7 +60,10 @@ const Home = () => {
 						className="tweet-btn"
 						href={`https://twitter.com/intent/tweet?text=${
 							quote.text
-						} - ${quote.author.replace(', type.fit', '')}`}
+						} - ${quote.author.replace(
+							', type.fit',
+							'',
+						)} - I found this Quote on random-quote.makwritinghouse.com - @makwritinghouse`}
 						target="_blank"
 						rel="noopener noreferrer"
 					>
