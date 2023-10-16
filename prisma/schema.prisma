@@ -1,15 +1,18 @@
+// Define the generator for the Prisma client
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client-js"  // Use the Prisma client provider
 }
 
+// Define the data source for the MySQL database
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider = "mysql"             // Use the MySQL provider
+  url      = env("DATABASE_URL") // Use the database URL from the environment variable
 }
 
+// Define the data model for the "Quote" table
 model Quote {
-  id        Int     @id @default(autoincrement())
-  author    String
-  quote     String?
-  is_active Boolean @default(false)
+  id        Int     @id @default(autoincrement())  // Define the "id" column as the primary key with auto-increment
+  author    String                                  // Define the "author" column as a string
+  quote     String?                                 // Define the "quote" column as an optional string
+  is_active Boolean @default(false)                 // Define the "is_active" column as a boolean with default value of false
 }
